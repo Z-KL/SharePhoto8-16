@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FAFAFA">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="20dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/menu_iv_left"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_above="@+id/bottom_bar_text_1"
+                android:src="@drawable/menu_left"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView
+                android:id="@+id/menu_iv_message"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginRight="30dp"
+                android:layout_above="@+id/bottom_bar_text_1"
+                android:src="@drawable/menu_message"
+                android:layout_toLeftOf="@id/menu_iv_setting"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView
+                android:id="@+id/menu_iv_setting"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_above="@+id/bottom_bar_text_1"
+                android:src="@drawable/menu_setting"
+                android:layout_alignParentRight="true"
+                tools:ignore="UnknownId"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/menu_ly_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="6dp"
+            android:onClick="buttonLogin"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+            <ImageView
+                android:id="@+id/menu_iv_login"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_above="@+id/bottom_bar_text_1"
+                android:src="@drawable/menu_login" />
+            <TextView
+                android:id="@+id/menu_tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="登 录"
+                android:textColor="#E6414141"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="#FAFAFA"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+                <ImageView
+                    android:id="@+id/menu_module_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_above="@+id/bottom_bar_text_1"
+                    android:src="@drawable/menu_module_1"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground" />
+                <ImageView
+                    android:id="@+id/menu_module_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/menu_module_2"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+                <ImageView
+                    android:id="@+id/menu_module_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_above="@+id/bottom_bar_text_1"
+                    android:src="@drawable/menu_module_3"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"/>
+                <ImageView
+                    android:id="@+id/menu_module_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/menu_module_4"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:showDividers="middle|end"
+                android:divider="@drawable/menu_underline"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="bottom"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:id="@+id/menu_iv_bar1"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/menu_bar1" />
+                    <TextView
+                        android:id="@+id/menu_tv_bar1"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="自动备份"
+                        android:textColor="#E6414141"
+                        android:textSize="18sp"/>
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_right" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:gravity="bottom"
+
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/menu_iv_bar2"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/menu_bar2"
+                        android:layout_gravity="bottom"/>
+
+                    <TextView
+                        android:id="@+id/menu_tv_bar2"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="最近删除"
+                        android:textColor="#E6414141"
+                        android:textSize="18sp"
+                        android:layout_gravity="bottom"/>
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_right"
+                        android:layout_gravity="bottom"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:id="@+id/menu_iv_bar3"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/menu_bar3" />
+                    <TextView
+                        android:id="@+id/menu_tv_bar3"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="释放空间"
+                        android:textColor="#E6414141"
+                        android:textSize="18sp"/>
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:id="@+id/menu_iv_bar4"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/menu_bar4" />
+                    <TextView
+                        android:id="@+id/menu_tv_bar4"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="主题"
+                        android:textColor="#E6414141"
+                        android:textSize="18sp"/>
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_ly_bar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:id="@+id/menu_iv_bar5"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/menu_bar5" />
+                    <TextView
+                        android:id="@+id/menu_tv_bar5"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="关于"
+                        android:textColor="#E6414141"
+                        android:textSize="18sp"/>
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_right"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

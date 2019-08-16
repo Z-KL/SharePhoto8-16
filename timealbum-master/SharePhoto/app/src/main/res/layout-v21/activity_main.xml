@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/start_logo">
+        <RelativeLayout
+            android:id="@+id/main_rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/main_iv_menu"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:src="@drawable/main_menu"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView
+                android:id="@+id/main_iv_share"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/main_share"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/start_logo">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                android:backgroundTint="#fff"/>
+            <Button
+                android:id="@+id/btnAlbum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地相册"
+                android:layout_gravity="center"
+                tools:ignore="MissingConstraints"
+                android:background="#5296E4"
+                style="?android:attr/borderlessButtonStyle"
+                android:alpha="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
